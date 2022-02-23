@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz Project</title>
+</head>
+<body>
+    <main>
+
+        <!-- Landing Page -->
+        <section class="landing">
+            <!-- Have an image and title here with some animation - something reminiscent of a pub trivia night -->
+            <h1>Trivia Night</h1>
+            <h2>Get Ready!</h2>
+
+        </section>
+
+        <!-- User Inputs/Get Started -->
+        <section class="mainScreen hidden">
+            <h1>Select Your Quiz Type</h1>
+
+            <label for="difficulty">Difficulty:</label>
+            <select name="difficulty" class="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <select name="category" class="category">
+                <option value="10">Entertainment:Books</option>
+                <option value="11">Entertainment:Film</option>
+                <option value="9">General Knowledge</option>
+                <option value="22">Geography</option>
+                <option value="23">History</option>
+                <option value="26">Celebrities</option>
+            </select>
+
+        
+            <button class="startQuiz">Start Quiz</button>
+        
+        </section>
+    
+        <!-- Quiz container - nothing to see here -->
+        <div class="quiz-container">
+            <!-- Question 1 -->
+            <section class="1 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question1"></h2>
+                <div class="answers">
+                    <button class="correct correct1">Option 1</button>
+                    <button class="incorrect firstwrong1">Option 2</button>
+                    <button class="incorrect secondwrong1">Option 3</button>
+                    <button class="incorrect thirdwrong1">Option 4</button>
+                </div>
+            
+            
+            
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 2 -->
+            <section class="2 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question2"></h2>
+                <div class="answers">
+                    <button class="correct correct2">Option 1</button>
+                    <button class="incorrect firstwrong2">Option 2</button>
+                    <button class="incorrect secondwrong2">Option 3</button>
+                    <button class="incorrect thirdwrong2">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 3 -->
+            <section class="3 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question3"></h2>
+                <div class="answers">
+                    <button class="correct correct3">Option 1</button>
+                    <button class="incorrect firstwrong3">Option 2</button>
+                    <button class="incorrect secondwrong3">Option 3</button>
+                    <button class="incorrect thirdwrong3">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 4 -->
+            <section class="4 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question4"></h2>
+                <div class="answers">
+                    <button class="correct correct4">Option 1</button>
+                    <button class="incorrect firstwrong4">Option 2</button>
+                    <button class="incorrect secondwrong4">Option 3</button>
+                    <button class="incorrect thirdwrong4">Option 4</button>
+                </div>
+            
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 5 -->
+            <section class="5 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question5"></h2>
+                <div class="answers">
+                    <button class="correct correct5">Option 1</button>
+                    <button class="incorrect firstwrong5">Option 2</button>
+                    <button class="incorrect secondwrong5">Option 3</button>
+                    <button class="incorrect thirdwrong5">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 6 -->
+            <section class="6 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question6"></h2>
+                <div class="answers">
+                    <button class="correct correct6">Option 1</button>
+                    <button class="incorrect firstwrong6">Option 2</button>
+                    <button class="incorrect secondwrong6">Option 3</button>
+                    <button class="incorrect thirdwrong6">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 7 -->
+            <section class="7 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question7"></h2>
+                <div class="answers">
+                    <button class="correct correct7">Option 1</button>
+                    <button class="incorrect firstwrong7">Option 2</button>
+                    <button class="incorrect secondwrong7">Option 3</button>
+                    <button class="incorrect thirdwrong7">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 8 -->
+            <section class="8 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question8"></h2>
+                <div class="answers">
+                    <button class="correct correct8">Option 1</button>
+                    <button class="incorrect firstwrong8">Option 2</button>
+                    <button class="incorrect secondwrong8">Option 3</button>
+                    <button class="incorrect thirdwrong8">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 9 -->
+            <section class="9 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question9"></h2>
+                <div class="answers">
+                    <button class="correct correct9">Option 1</button>
+                    <button class="incorrect firstwrong9">Option 2</button>
+                    <button class="incorrect secondwrong9">Option 3</button>
+                    <button class="incorrect thirdwrong9">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+            <!-- Question 10 -->
+            <section class="10 quiz hidden">
+                <h1>Quiz</h1>
+                <div class="gameData">
+                    <p>Score:<span class="score">0</span></p>
+                    <p class="timerDisplay">Timer:<span class="timer"></span></p>
+                    <p class="timesUp hidden">Times Up!</p>
+                </div>
+            
+                <h2 class="question10"></h2>
+                <div class="answers">
+                    <button class="correct correct10">Option 1</button>
+                    <button class="incorrect firstwrong10">Option 2</button>
+                    <button class="incorrect secondwrong10">Option 3</button>
+                    <button class="incorrect thirdwrong10">Option 4</button>
+                </div>
+
+                <button class="startOver">Start Over</button>
+            </section>
+
+        </div>
+
+        <!-- Results: Correct Answer -->
+        <section class="userMessage correctAnswer hidden">
+            <h1>CORRECT</h1>
+            <button class="next">Next Question</button>
+
+        </section>
+
+        <!-- Results: Wrong Answer -->
+        <section class="userMessage wrongAnswer hidden">
+            <h1>WRONG</h1>
+            <button class="next">Next Question</button>
+        </section>
+
+        <!-- Time Ran Out -->
+        <section class="userMessage timesUp hidden">
+            <h1>Too Slow! Time's Up.</h1>
+            <button class="next">Next Question</button>
+        </section>
+
+        <!-- Final Score -->
+        <section class="results hidden">
+            <!-- <h3>Player: <span class="name"></span></h3> -->
+            <h2>Final Score:<span class="score"></span></h2>
+            <button class="startOver">Start Over</button>
+        </section>
+    </main>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
