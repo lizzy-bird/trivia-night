@@ -23,6 +23,14 @@ main{
   justify-content:center;
   align-items:center;
   background-color:rgba(0, 0, 0, 0.7);
+  margin-bottom:0;
+}
+
+footer{
+  height:10vh;
+  background-color:rgba(0, 0, 0, 0.7);
+  text-align:center;
+  margin:0;
 }
 
 .hidden{
@@ -37,6 +45,11 @@ p,
 label,
 button{
   font-family: 'Sarabun', sans-serif;
+}
+
+p{
+  margin:0;
+  background:#1b1a1a;
 }
 
 h4{
@@ -61,7 +74,7 @@ section,
   width:50vw;
   height:50vh;
   min-width:800px;
-  min-height: 500px;
+  min-height: 450px;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -70,7 +83,7 @@ section,
 }
 
 .userInputs{
-  min-height:400px;
+  max-height:400px;
 }
 
 .quiz, 
