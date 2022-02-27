@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@200;300;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
     <title>Quiz Project</title>
 </head>
@@ -13,34 +16,56 @@
         <!-- Landing Page -->
         <section class="landing">
             <!-- Have an image and title here with some animation - something reminiscent of a pub trivia night -->
-            <h1>Trivia Night</h1>
-            <h2>Get Ready!</h2>
+            <h1>WELCOME TO</h1>
+            <!-- <img class="titleImage" src="./images/trivia-night-title.png" alt="Neon sign that reads 'Trivia Night'"> -->
+            <img class="titleImage" src="./images/title-splice.png" alt="Neon sign that reads 'Trivia Night'">
+            <h2>Grab a drink and get settled - the game is about to begin!</h2>
 
         </section>
 
         <!-- User Inputs/Get Started -->
         <section class="mainScreen hidden">
-            <h1>Select Your Quiz Type</h1>
+            <!-- <img class="titleImage" src="./images/trivia-night-title.png" alt="Neon sign that reads 'Trivia Night'"> -->
+            <img class="titleImage" src="./images/title-splice.png" alt="Neon sign that reads 'Trivia Night'">
 
-            <label for="difficulty">Difficulty:</label>
-            <select name="difficulty" class="difficulty">
-                <option value="easy">Easy</option>
-                <option value="medium">Medium</option>
-                <option value="hard">Hard</option>
-            </select>
+            <div class="userInputs">
+                <h1>SELECT YOUR QUIZ TYPE</h1>
+                <label for="category">Category:</label>
+                <select name="category" class="category">
+                    <option value="" selected disabled> Select a Category</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Entertainment:Books</option>
+                    <option value="11">Entertainment:Film</option>
+                    <option value="12">Entertainment:Music</option>
+                    <option value="13">Entertainment:Musicals & Theatre</option>
+                    <option value="14">Entertainment:Television</option>
+                    <option value="15">Entertainment:Video Games</option>
+                    <option value="16">Entertainment:Board Games</option>
+                    <option value="29">Entertainment:Comic Books</option>
+                    <option value="17">Science:Nature</option>
+                    <option value="30">Science:Gadgets</option>
+                    <option value="18">Science:Computers</option>
+                    <option value="19">Science:Mathematics</option>
+                    <option value="21">Sports</option>
+                    <option value="20">Mythology</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                </select>
 
-            <label for="category">Category:</label>
-            <select name="category" class="category">
-                <option value="10">Entertainment:Books</option>
-                <option value="11">Entertainment:Film</option>
-                <option value="9">General Knowledge</option>
-                <option value="22">Geography</option>
-                <option value="23">History</option>
-                <option value="26">Celebrities</option>
-            </select>
+                <label for="difficulty">Difficulty:</label>
+                <select name="difficulty" class="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
 
-        
-            <button class="startQuiz">Start Quiz</button>
+
+            
+                <button class="startQuiz">Start Quiz</button>
+
+            </div>
         
         </section>
     
@@ -48,29 +73,33 @@
         <div class="quiz-container">
             <!-- Question 1 -->
             <section class="1 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 1 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
                     <p class="timesUp hidden">Times Up!</p>
                 </div>
-            
                 <h2 class="question1"></h2>
                 <div class="answers">
-                    <button class="correct correct1">Option 1</button>
                     <button class="incorrect firstwrong1">Option 2</button>
                     <button class="incorrect secondwrong1">Option 3</button>
+                    <button class="correct correct1">Option 1</button>
                     <button class="incorrect thirdwrong1">Option 4</button>
+                </div>
+                
+                <div class="gameData">
+                    
+                    <button class="startOver">Start Over</button>
+                    
                 </div>
             
             
-            
-                <button class="startOver">Start Over</button>
+                
             </section>
 
             <!-- Question 2 -->
             <section class="2 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 2 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -79,8 +108,8 @@
             
                 <h2 class="question2"></h2>
                 <div class="answers">
-                    <button class="correct correct2">Option 1</button>
                     <button class="incorrect firstwrong2">Option 2</button>
+                    <button class="correct correct2">Option 1</button>
                     <button class="incorrect secondwrong2">Option 3</button>
                     <button class="incorrect thirdwrong2">Option 4</button>
                 </div>
@@ -90,7 +119,7 @@
 
             <!-- Question 3 -->
             <section class="3 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 3 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -110,7 +139,7 @@
 
             <!-- Question 4 -->
             <section class="4 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 4 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -130,7 +159,7 @@
 
             <!-- Question 5 -->
             <section class="5 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 5 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -139,10 +168,10 @@
             
                 <h2 class="question5"></h2>
                 <div class="answers">
-                    <button class="correct correct5">Option 1</button>
                     <button class="incorrect firstwrong5">Option 2</button>
                     <button class="incorrect secondwrong5">Option 3</button>
                     <button class="incorrect thirdwrong5">Option 4</button>
+                    <button class="correct correct5">Option 1</button>
                 </div>
 
                 <button class="startOver">Start Over</button>
@@ -150,7 +179,7 @@
 
             <!-- Question 6 -->
             <section class="6 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 6 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -159,9 +188,9 @@
             
                 <h2 class="question6"></h2>
                 <div class="answers">
-                    <button class="correct correct6">Option 1</button>
                     <button class="incorrect firstwrong6">Option 2</button>
                     <button class="incorrect secondwrong6">Option 3</button>
+                    <button class="correct correct6">Option 1</button>
                     <button class="incorrect thirdwrong6">Option 4</button>
                 </div>
 
@@ -170,7 +199,7 @@
 
             <!-- Question 7 -->
             <section class="7 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 7 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -179,8 +208,8 @@
             
                 <h2 class="question7"></h2>
                 <div class="answers">
-                    <button class="correct correct7">Option 1</button>
                     <button class="incorrect firstwrong7">Option 2</button>
+                    <button class="correct correct7">Option 1</button>
                     <button class="incorrect secondwrong7">Option 3</button>
                     <button class="incorrect thirdwrong7">Option 4</button>
                 </div>
@@ -190,7 +219,7 @@
 
             <!-- Question 8 -->
             <section class="8 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 8 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -210,7 +239,7 @@
 
             <!-- Question 9 -->
             <section class="9 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 9 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -219,8 +248,8 @@
             
                 <h2 class="question9"></h2>
                 <div class="answers">
-                    <button class="correct correct9">Option 1</button>
                     <button class="incorrect firstwrong9">Option 2</button>
+                    <button class="correct correct9">Option 1</button>
                     <button class="incorrect secondwrong9">Option 3</button>
                     <button class="incorrect thirdwrong9">Option 4</button>
                 </div>
@@ -230,7 +259,7 @@
 
             <!-- Question 10 -->
             <section class="10 quiz hidden">
-                <h1>Quiz</h1>
+                <h4>Question 10 of 10</h4>
                 <div class="gameData">
                     <p>Score:<span class="score">0</span></p>
                     <p class="timerDisplay">Timer:<span class="timer"></span></p>
@@ -239,10 +268,10 @@
             
                 <h2 class="question10"></h2>
                 <div class="answers">
-                    <button class="correct correct10">Option 1</button>
                     <button class="incorrect firstwrong10">Option 2</button>
                     <button class="incorrect secondwrong10">Option 3</button>
                     <button class="incorrect thirdwrong10">Option 4</button>
+                    <button class="correct correct10">Option 1</button>
                 </div>
 
                 <button class="startOver">Start Over</button>
@@ -270,9 +299,9 @@
         </section>
 
         <!-- Final Score -->
-        <section class="results hidden">
+        <section class="userMessage results hidden">
             <!-- <h3>Player: <span class="name"></span></h3> -->
-            <h2>Final Score:<span class="score"></span></h2>
+            <h2>Final Score: <span class="score"></span></h2>
             <button class="startOver">Start Over</button>
         </section>
     </main>
